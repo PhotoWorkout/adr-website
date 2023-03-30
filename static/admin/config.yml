@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+  repo: "https://github.com/PhotoWorkout/adr-website.git" # Path to your Github repository
 
 media_folder: "static/img"
 public_folder: "/img"
@@ -15,3 +16,10 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+# Set your site's identity
+site_metadata:
+  title: "Andreas De Rosi - Personal Website"
+  description: "Personal Blog"
+  author: "Andreas De Rosi"
+  email: "admin@photoworkout.org"
