@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Andreas De Rosi - Personal Site</title>
+        <link>https://www.andreasderosi.com/</link>
+        <description>This is my cool site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>andreas@derosi.com (Andreas De Rosi)</managingEditor>
+            <webMaster>andreas@derosi.com (Andreas De Rosi)</webMaster><lastBuildDate>Thu, 30 Mar 2023 09:39:10 &#43;0530</lastBuildDate>
+            <atom:link href="https://www.andreasderosi.com/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Hugo Cheat Sheet</title>
+    <link>https://www.andreasderosi.com/posts/hugo-cheat-sheet/</link>
+    <pubDate>Thu, 30 Mar 2023 09:39:10 &#43;0530</pubDate>
+    <author>Andreas De Rosi</author>
+    <guid>https://www.andreasderosi.com/posts/hugo-cheat-sheet/</guid>
+    <description><![CDATA[ Go to my root: cd /Users/andreasderosi/Library/CloudStorage/Dropbox/hugo-site/adr-website Start Server: hugo server Stop Huger Server: Control + C ]]></description>
+</item>
+</channel>
+</rss>

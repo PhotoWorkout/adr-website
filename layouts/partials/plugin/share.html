@@ -1,0 +1,18 @@
+{{- $share := (.Scratch.Get "params").share | default dict -}}
+
+{{- if $share.enable -}}
+    {{- /* 001: Twitter */ -}}
+    {{- if $share.Twitter -}}
+        <a href="javascript:void(0);" title="{{ T `shareOn` }} Twitter" data-sharer="twitter" data-url="{{ .Permalink }}" data-title="{{ .Title }}"{{ with .Site.Params.Social.Twitter }} data-via="{{ . }}"{{ end }}{{ with .Params.tags }} data-hashtags="{{ delimit . `,` }}"{{ end }}>
+            {{- dict "Class" "fab fa-twitter fa-fw" | partial "plugin/icon.html" -}}
+        </a>
+    {{- end -}}
+
+    {{- /* 002: Facebook */ -}}
+    {{- if $share.Facebook -}}
+        <a href="javascript:void(0);" title="{{ T `shareOn` }} Facebook" data-sharer="facebook" data-url="{{ .Permalink }}"{{ with .Params.tags }} data-hashtag="{{ index . 0 }}"{{ end }}>
+            {{- dict "Class" "fab fa-facebook-square fa-fw" | partial "plugin/icon.html" -}}
+        </a>
+    {{- end -}}
+
+{{- end -}}
