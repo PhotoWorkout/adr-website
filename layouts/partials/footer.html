@@ -11,7 +11,6 @@
             {{- /* Hugo and LoveIt */ -}}
             {{- if ne .Site.Params.footer.hugo false -}}
                 <div class="footer-line">
-                    <div data-netlify-identity-button></div>
                     {{- $hugo := printf `<a href="https://gohugo.io/" target="_blank" rel="noopener noreffer nofollow" title="Hugo %v">Hugo</a>` hugo.Version -}}
                     {{- $theme := .Scratch.Get "version" | printf `<a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer nofollow"  title="LoveIt %v"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>` -}}
                     {{- dict "Hugo" $hugo "Theme" $theme | T "poweredBySome" | safeHTML }}
