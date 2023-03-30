@@ -1,0 +1,6 @@
+[identity]
+  [identity.emails]
+    confirmation_template = "identity-templates/confirmation.html"
+    recovery_template = "identity-templates/recovery.html"
+    invitation_template = "identity-templates/invitation.html"
+    email_change_template = "identity-templates/email-change.html"
