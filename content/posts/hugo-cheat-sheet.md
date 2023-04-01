@@ -5,7 +5,7 @@ author: Andrea De Rosi
 featured_image: /img/hugo-code.jpg
 summary: "Few commands for saving your code edits to your Github repository.  "
 ---
-* Note to my root: cd /Users/andreasderosi/Library/CloudStorage/Dropbox/hugo-site/adr-website
+* Note to my root: cd /path/to-folder/
 * Start Server: hugo server
 * Stop Huger Server: Control + C
 
