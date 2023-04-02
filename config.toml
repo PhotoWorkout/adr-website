@@ -27,6 +27,15 @@ languageName = "English"
   LinkedIn = "andreasderosi"
   GitHub = "PhotoWorkout"
 
+# Analytics config
+[params.analytics]
+  enable = true
+
+# Google Analytics
+[params.analytics.google]
+  id = "G-BS75JXR9JG"
+  anonymizeIP = true
+
 # Menu config
 [menu]
   [[menu.main]]
@@ -100,6 +109,3 @@ languageName = "English"
     icp = ""
     # license info (HTML format is supported)
     license= ""
-
-    # Goolge Analytics Code
-    googleAnalytics = "G-BS75JXR9JG"
