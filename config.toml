@@ -100,3 +100,6 @@ languageName = "English"
     icp = ""
     # license info (HTML format is supported)
     license= ""
+
+    # Goolge Analytics Code
+    googleAnalytics = "G-BS75JXR9JG"
