@@ -7,6 +7,8 @@ tags:
 - note to self
 ---
 
+## Git Commands Cheat Sheet
+
 * Note to my root: cd /path/to-folder/
 * Start Server: hugo server
 * Stop Huger Server: Control + C
@@ -17,7 +19,7 @@ tags:
 
 After executing these commands, your Hugo site changes should be successfully committed and pushed to GitHub.
 
-## Git Commands Cheat Sheet (git help -a)
+## Git Commands Help (git help -a)
 
 These are common Git commands used in various situations:
 
@@ -53,18 +55,18 @@ These are common Git commands used in various situations:
 - pull: Fetch from and integrate with another repository or a local branch
 - push: Update remote refs along with associated objects
 
-## Hugo Commands Cheat Sheet (hugo help)
+## Hugo Commands Cheat Sheet
 
 Hugo is a powerful and flexible static site generator designed to build websites efficiently and easily. Built with love by spf13 and friends in Go, Hugo has a wide range of commands to make your web development experience smooth and enjoyable. Complete documentation is available at https://gohugo.io/. In this Hugo Commands Cheat Sheet, we will highlight some of the most commonly used commands that everyday users may need.
 
 ### Everyday Hugo Commands
 - hugo: The main command used to build your Hugo site.
 - hugo server: A high-performance web server for local development. It watches for changes in your files and - automatically refreshes the browser.
-hugo new: Create new content for your site, such as a blog post or a new page.
-hugo list: List various types of content, like drafts, future-dated posts, or expired content.
-hugo version: Print the version number of Hugo installed on your machine.
-hugo mod: Various helpers for working with Hugo Modules, which allow you to extend and organize your site's functionality.
-hugo deploy: Deploy your site to a cloud provider, such as AWS S3, Google Cloud Storage, or Azure Blob Storage.
+- hugo new: Create new content for your site, such as a blog post or a new page.
+- hugo list: List various types of content, like drafts, future-dated posts, or expired content.
+- hugo version: Print the version number of Hugo installed on your machine.
+- hugo mod: Various helpers for working with Hugo Modules, which allow you to extend and organize your site's functionality.
+- hugo deploy: Deploy your site to a cloud provider, such as AWS S3, Google Cloud Storage, or Azure Blob Storage.
 
 ### Useful Flags
 - -D, --buildDrafts: Include content marked as a draft during the build process.
@@ -76,7 +78,7 @@ hugo deploy: Deploy your site to a cloud provider, such as AWS S3, Google Cloud 
 
 These are just a few of the many commands and flags available in Hugo. Be sure to consult the complete documentation at https://gohugo.io/ for more information and a comprehensive list of all available commands and flags. Happy coding!
 
-## Hugo Commands Cheat Sheet (hugo help)
+## Hugo Help File
 
 `hugo` is the main command, used to build your Hugo site.
 
