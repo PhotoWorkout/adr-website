@@ -8,3 +8,6 @@ I did a quick test with the Netlify CMS and Hugo. I created a new post using the
 I wasn't very impressed with the CMS. It's very basic. 
 Maybe I'm missing something. I'll try it again later.
 
+Here is look at how the Netlify CMS looks:
+
+![Netlify CMS](/static/images/netlify-cms.jpg "Netlify CMS")
