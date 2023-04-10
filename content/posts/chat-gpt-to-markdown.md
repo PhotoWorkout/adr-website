@@ -50,8 +50,48 @@ function h(html) {
   o.click();
 })();
 ```
-To use it, open the conversation in Chrome and open the DevTools. Go to the Console tab and paste the script. Hit enter and the markdown file will be downloaded.
+To use it, open the conversation in Chrome and open the DevTools. Go to the Console tab and paste the script. **Hit enter** and the markdown file will be downloaded.
 
 This script extracts the conversation with ChatGPT and creates a downloadable markdown file. The h function is used to format the content by replacing HTML tags with corresponding markdown syntax.
+
+If you want to get tables in markdown language, you have to tell Chat GPT that you want the table in markdown format (and in a code box).
+
+E.g. **Prompt**: "Make the table of the GDP growth rate of 2020, use markdown language and put it in a code box."
+
+**ChatGPT**: Here's a simple markdown table for the GDP growth rate of 2020. You can copy and paste this into a markdown editor.
+
+```markdown
+| **Country**    | **GDP Growth Rate (2020)** |
+|----------------|---------------------------|
+| United States  | -3.5%                     |
+| China          | 2.3%                      |
+| Japan          | -4.8%                     |
+| Germany        | -4.9%                     |
+| United Kingdom | -9.9%                     |
+| India          | -7.7%                     |
+| France         | -8.2%                     |
+| Brazil         | -4.1%                     |
+| Italy          | -8.9%                     |
+| Canada         | -5.4%                     |
+```
+
+Simply copy and paste the markdown table provided by ChatGPT from the code box, and it will be displayed as a table in the markdown format, appearing like this:
+
+| **Country**    | **GDP Growth Rate (2020)** |
+|----------------|---------------------------|
+| United States  | -3.5%                     |
+| China          | 2.3%                      |
+| Japan          | -4.8%                     |
+| Germany        | -4.9%                     |
+| United Kingdom | -9.9%                     |
+| India          | -7.7%                     |
+| France         | -8.2%                     |
+| Brazil         | -4.1%                     |
+| Italy          | -8.9%                     |
+| Canada         | -5.4%                     |
+
+
+
+**Note**: This script is not perfect and may not work for all conversations. It is just a hack to save the conversation as a markdown file.
 
 Credit: [Rosa Amanita, Source: Reddit](https://www.reddit.com/r/ChatGPT/comments/zm237o/save_your_chatgpt_conversation_as_a_markdown_file/)
