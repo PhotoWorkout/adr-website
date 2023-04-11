@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Chrome Hack to Save Chat GPT converstion as Markdown - Andreas De Rosi - Personal Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Chrome Hack to Save Chat GPT converstion as Markdown" />
+<meta property="og:description" content="I was having a conversation with Chat GPT and wanted to save it as a markdown file. I found a way to do it using Chrome DevTools. Here is the script I used to save the conversation as a markdown file.
+Chrome Script function h(html) { return html .replace(/&lt;p&gt;/g, &#39;\n\n&#39;) .replace(/&lt;\/p&gt;/g, &#39;&#39;) .replace(/&lt;b&gt;/g, &#39;**&#39;) .replace(/&lt;\/b&gt;/g, &#39;**&#39;) .replace(/&lt;i&gt;/g, &#39;_&#39;) .replace(/&lt;\/i&gt;/g, &#39;_&#39;) .replace(/&lt;code[^&gt;]*&gt;/g, (match) =&gt; { const lm = match.match(/class=&#34;[^&#34;]*language-([^&#34;]*)&#34;/); return lm ?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.andreasderosi.com/posts/chat-gpt-to-markdown/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-30T22:49:10+05:30" />
+<meta property="article:modified_time" content="2023-03-30T22:49:10+05:30" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Chrome Hack to Save Chat GPT converstion as Markdown"/>
+<meta name="twitter:description" content="I was having a conversation with Chat GPT and wanted to save it as a markdown file. I found a way to do it using Chrome DevTools. Here is the script I used to save the conversation as a markdown file.
+Chrome Script function h(html) { return html .replace(/&lt;p&gt;/g, &#39;\n\n&#39;) .replace(/&lt;\/p&gt;/g, &#39;&#39;) .replace(/&lt;b&gt;/g, &#39;**&#39;) .replace(/&lt;\/b&gt;/g, &#39;**&#39;) .replace(/&lt;i&gt;/g, &#39;_&#39;) .replace(/&lt;\/i&gt;/g, &#39;_&#39;) .replace(/&lt;code[^&gt;]*&gt;/g, (match) =&gt; { const lm = match.match(/class=&#34;[^&#34;]*language-([^&#34;]*)&#34;/); return lm ?"/>
+<meta name="application-name" content="Andreas De Rosi">
+<meta name="apple-mobile-web-app-title" content="Andreas De Rosi"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.andreasderosi.com/posts/chat-gpt-to-markdown/" /><link rel="prev" href="https://www.andreasderosi.com/posts/netlify-cms-hugo-test/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Chrome Hack to Save Chat GPT converstion as Markdown",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.andreasderosi.com\/posts\/chat-gpt-to-markdown\/"
+        },"genre": "posts","keywords": "note to self","wordcount":  459 ,
+        "url": "https:\/\/www.andreasderosi.com\/posts\/chat-gpt-to-markdown\/","datePublished": "2023-03-30T22:49:10+05:30","dateModified": "2023-03-30T22:49:10+05:30","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Andreas De Rosi"
+            },"description": ""
+    }
+    </script>
+
+
+    </head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Andreas De Rosi - Personal Site">Andreas De Rosi</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Andreas De Rosi - Personal Site">Andreas De Rosi</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Chrome Hack to Save Chat GPT converstion as Markdown</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/about/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Andreas De Rosi</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-30">2023-03-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;459 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#chrome-script">Chrome Script</a></li>
+    <li><a href="#get-a-markdown-table-from-chat-gpt">Get a markdown table from Chat GPT</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>I was having a conversation with Chat GPT and wanted to save it as a markdown file. I found a way to do it using Chrome DevTools.
+Here is the script I used to save the conversation as a markdown file.</p>
+<h2 id="chrome-script">Chrome Script</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">h</span><span class="p">(</span><span class="nx">html</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">html</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;p&gt;/g</span><span class="p">,</span> <span class="s1">&#39;\n\n&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;\/p&gt;/g</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;b&gt;/g</span><span class="p">,</span> <span class="s1">&#39;**&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;\/b&gt;/g</span><span class="p">,</span> <span class="s1">&#39;**&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;i&gt;/g</span><span class="p">,</span> <span class="s1">&#39;_&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;\/i&gt;/g</span><span class="p">,</span> <span class="s1">&#39;_&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;code[^&gt;]*&gt;/g</span><span class="p">,</span> <span class="p">(</span><span class="nx">match</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kr">const</span> <span class="nx">lm</span> <span class="o">=</span> <span class="nx">match</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/class=&#34;[^&#34;]*language-([^&#34;]*)&#34;/</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="nx">lm</span> <span class="o">?</span> <span class="s1">&#39;\n```&#39;</span> <span class="o">+</span> <span class="nx">lm</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;\n&#39;</span> <span class="o">:</span> <span class="s1">&#39;```&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;\/code[^&gt;]*&gt;/g</span><span class="p">,</span> <span class="s1">&#39;```&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;[^&gt;]*&gt;/g</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/Copy code/g</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">replace</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="sr">/This content may violate our content policy. If you believe this to be in error, please submit your feedback — your input will aid our research in this area./g</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">trim</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.text-base&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">t</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">s</span> <span class="k">of</span> <span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">s</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.whitespace-pre-wrap&#39;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">t</span> <span class="o">+=</span> <span class="sb">`**</span><span class="si">${</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">s</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;img&#39;</span><span class="p">)</span> <span class="o">?</span> <span class="s1">&#39;You&#39;</span> <span class="o">:</span> <span class="s1">&#39;ChatGPT&#39;</span>
+</span></span><span class="line"><span class="cl">      <span class="si">}</span><span class="sb">**: </span><span class="si">${</span><span class="nx">h</span><span class="p">(</span><span class="nx">s</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.whitespace-pre-wrap&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="p">)</span><span class="si">}</span><span class="sb">\n\n`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">o</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">o</span><span class="p">.</span><span class="nx">download</span> <span class="o">=</span> <span class="s1">&#39;Conversation with ChatGPT.md&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">o</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">URL</span><span class="p">.</span><span class="nx">createObjectURL</span><span class="p">(</span><span class="k">new</span> <span class="nx">Blob</span><span class="p">([</span><span class="nx">t</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">o</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">o</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">o</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">})();</span>
+</span></span></code></pre></div><p>To use it, open the conversation in Chrome and open the DevTools. Go to the Console tab and paste the script. <strong>Hit enter</strong> and the markdown file will be downloaded.</p>
+<p>This script extracts the conversation with ChatGPT and creates a downloadable markdown file. The h function is used to format the content by replacing HTML tags with corresponding markdown syntax.</p>
+<p><strong>Note</strong>: This script is not perfect and may not work for all conversations. It is just a hack to save the conversation as a markdown file.</p>
+<h2 id="get-a-markdown-table-from-chat-gpt">Get a markdown table from Chat GPT</h2>
+<p>If you want to get tables in markdown language, you have to tell Chat GPT that you want the table in markdown format (and in a code box).</p>
+<p>E.g. <strong>Prompt</strong>: &ldquo;Make the table of the GDP growth rate of 2020, use markdown language and put it in a code box.&rdquo;</p>
+<p><strong>ChatGPT</strong>: Here&rsquo;s a simple markdown table for the GDP growth rate of 2020. You can copy and paste this into a markdown editor.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">| <span class="gs">**Country**</span>    | <span class="gs">**GDP Growth Rate (2020)**</span> |
+</span></span><span class="line"><span class="cl">|----------------|---------------------------|
+</span></span><span class="line"><span class="cl">| United States  | -3.5%                     |
+</span></span><span class="line"><span class="cl">| China          | 2.3%                      |
+</span></span><span class="line"><span class="cl">| Japan          | -4.8%                     |
+</span></span><span class="line"><span class="cl">| Germany        | -4.9%                     |
+</span></span><span class="line"><span class="cl">| United Kingdom | -9.9%                     |
+</span></span><span class="line"><span class="cl">| India          | -7.7%                     |
+</span></span><span class="line"><span class="cl">| France         | -8.2%                     |
+</span></span><span class="line"><span class="cl">| Brazil         | -4.1%                     |
+</span></span><span class="line"><span class="cl">| Italy          | -8.9%                     |
+</span></span><span class="line"><span class="cl">| Canada         | -5.4%                     |
+</span></span></code></pre></div><p>Simply copy and paste the markdown table provided by ChatGPT from the code box, and it will be displayed as a table in the markdown format, appearing like this:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Country</strong></th>
+<th><strong>GDP Growth Rate (2020)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>United States</td>
+<td>-3.5%</td>
+</tr>
+<tr>
+<td>China</td>
+<td>2.3%</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>-4.8%</td>
+</tr>
+<tr>
+<td>Germany</td>
+<td>-4.9%</td>
+</tr>
+<tr>
+<td>United Kingdom</td>
+<td>-9.9%</td>
+</tr>
+<tr>
+<td>India</td>
+<td>-7.7%</td>
+</tr>
+<tr>
+<td>France</td>
+<td>-8.2%</td>
+</tr>
+<tr>
+<td>Brazil</td>
+<td>-4.1%</td>
+</tr>
+<tr>
+<td>Italy</td>
+<td>-8.9%</td>
+</tr>
+<tr>
+<td>Canada</td>
+<td>-5.4%</td>
+</tr>
+</tbody>
+</table>
+<p>Credit: <a href="https://www.reddit.com/r/ChatGPT/comments/zm237o/save_your_chatgpt_conversation_as_a_markdown_file/" target="_blank" rel="noopener noreffer ">Rosa Amanita, Source: Reddit</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-03-30</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.andreasderosi.com/posts/chat-gpt-to-markdown/" data-title="Chrome Hack to Save Chat GPT converstion as Markdown" data-via="andreasderosi" data-hashtags="note to self"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.andreasderosi.com/posts/chat-gpt-to-markdown/" data-hashtag="note to self"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/note-to-self/">note to self</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/netlify-cms-hugo-test/" class="prev" rel="prev" title="Writing my first test post with the Netlify CMS"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Writing my first test post with the Netlify CMS</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer nofollow" title="Hugo 0.111.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer nofollow"  title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/about/">Andreas De Rosi</a></span></div>
+        </div>
+    </footer>
+    
+    <link rel="stylesheet" href="/css/lightbox.css">
+    <script src="/js/lightbox.js"></script></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-BS75JXR9JG', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-BS75JXR9JG" async></script></body>
+</html>
