@@ -12,4 +12,4 @@ Maybe I'm missing something. I'll try it again later.
 
 Here is look at how the Netlify CMS looks:
 
-![Netlify CMS](/img/netlify-cms-user-interface.jpg "Netlify CMS")
+![Netlify CMS](/img/netlify-cms-user-interface.jpg "Netlify CMS" )
