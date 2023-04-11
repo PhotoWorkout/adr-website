@@ -7,6 +7,8 @@ tags:
 I was having a conversation with Chat GPT and wanted to save it as a markdown file. I found a way to do it using Chrome DevTools.
 Here is the script I used to save the conversation as a markdown file.
 
+## Chrome Script
+
 ```javascript
 function h(html) {
   return html
@@ -54,6 +56,10 @@ To use it, open the conversation in Chrome and open the DevTools. Go to the Cons
 
 This script extracts the conversation with ChatGPT and creates a downloadable markdown file. The h function is used to format the content by replacing HTML tags with corresponding markdown syntax.
 
+**Note**: This script is not perfect and may not work for all conversations. It is just a hack to save the conversation as a markdown file.
+
+## Get a markdown table from Chat GPT
+
 If you want to get tables in markdown language, you have to tell Chat GPT that you want the table in markdown format (and in a code box).
 
 E.g. **Prompt**: "Make the table of the GDP growth rate of 2020, use markdown language and put it in a code box."
@@ -91,7 +97,5 @@ Simply copy and paste the markdown table provided by ChatGPT from the code box, 
 | Canada         | -5.4%                     |
 
 
-
-**Note**: This script is not perfect and may not work for all conversations. It is just a hack to save the conversation as a markdown file.
 
 Credit: [Rosa Amanita, Source: Reddit](https://www.reddit.com/r/ChatGPT/comments/zm237o/save_your_chatgpt_conversation_as_a_markdown_file/)
