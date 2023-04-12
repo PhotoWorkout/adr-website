@@ -1,5 +1,5 @@
 ---
-title: "Chrome Hack to Save Chat GPT converstion as Markdown"
+title: "Chrome Hack to Save Chat GPT conversation as Markdown"
 date: 2023-03-30T22:49:10+05:30
 tags: 
 - note to self
