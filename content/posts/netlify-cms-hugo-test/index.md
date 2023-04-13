@@ -2,8 +2,11 @@
 title: Writing my first test post with the Netlify CMS
 date: 2023-03-30T13:57:50.120Z
 author: Andreas De Rosi
-featured_image: /img/netlify-cms-user-interface.jpg
+featured_image: hugo-netlify-cms.png
 summary: "A Brief Overview of Hugo CMS: My Personal Experience."
+resources:
+  - name: "featured-image"
+    src: "hugo-netlify-cms.png"
 ---
 I did a quick test with the Netlify CMS and Hugo. I created a new post using the CMS and it worked. But I'm back on Visual Studio Code for now. 
 

@@ -1,10 +1,14 @@
 ---
 title: Git and Hugo Commands Cheat Sheet
 date: 2023-03-30T09:39:10+05:30
+lastmod: 2023-04-13T10:24:11+05:30
 author: Andrea De Rosi
-featured_image: /img/hugo-code.jpg
+featured_image: hugo-code.jpg
 tags: 
 - note to self
+resources:
+- name: "featured-image"
+  src: "hugo-code.jpg"
 ---
 
 ## Git Commands Cheat Sheet
