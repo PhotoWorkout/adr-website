@@ -4,11 +4,11 @@ date: 2023-03-30T22:49:10+05:30
 lastmod: 2023-04-13T11:58:58+05:30
 tags: 
 - note to self
-featured_image: markedown-for-chat-gpt.jpg
+featured_image: markedown-for-chat-gpt-v2.jpg
 summary: "I was having a conversation with Chat GPT and wanted to save it as a markdown file. I found a way to do it using Chrome DevTools. Here is the script I used to save the conversation as a markdown file."
 resources:
   - name: "featured-image"
-    src: "markdown-for-chat-gpt.jpg"
+    src: "markdown-for-chat-gpt-v2.jpg"
 ---
 I was having a conversation with Chat GPT and wanted to save it as a markdown file.
 I found a way to do it using Chrome DevTools.
