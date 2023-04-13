@@ -1,0 +1,21 @@
+{{- $linkurl := .Destination }}
+{{- $relval := ""}}
+{{- $targetval := ""}}
+{{- $classval := "" }}
+{{- if strings.HasPrefix $linkurl "http" }}
+    {{- $targetval = printf "%s %s"  $targetval "_blank" }}
+    {{- $relval = printf "%s %s" $relval "noopener" }}
+    {{- $relval = printf "%s %s" $relval "noreferrer" }}
+    {{- if not (strings.Contains $relval "nofollow") }}
+        {{- $relval = printf "%s %s" $relval "nofollow" }}
+    {{- end -}}
+    {{- $classval = printf "%s %s" $classval "external" }}
+{{- end -}}
+{{- if strings.HasSuffix $linkurl "#?" }} 
+    {{- if not (strings.Contains $relval "nofollow") }}
+        {{- $relval = printf "%s %s" $relval "nofollow" }}
+    {{- end -}}
+    {{- $urlparts := split $linkurl "#" -}}
+    {{- $linkurl = index $urlparts 0}}
+{{- end -}}
+<a href="{{ $linkurl | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ with $relval}} rel="{{ trim . " " }}"{{ end }}{{ with $targetval}} target="{{ . }}"{{ end }}{{ with $classval}} class="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
